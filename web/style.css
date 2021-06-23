@@ -1,0 +1,67 @@
+* {
+    margin: 0;
+    padding: 0;
+    outline: none;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#screen {
+    height: 200px;
+    background-color: #f5f6f8;
+    position: relative;
+}
+#screen #exp {
+    height: 75px;
+    font-size: 42px;
+    line-height: 75px;
+    text-align: right;
+    padding: 0 20px;
+    color: #292929;
+    overflow-x: scroll;
+    overflow-y: hidden;
+}
+#screen #result {
+    height: 125px;
+    font-size: 56px;
+    font-weight: 600;
+    line-height: 125px;
+    text-align: right;
+    padding: 0 30px;
+    color: #01579B;
+    overflow: hidden;
+}
+
+#keypad {
+    display: table;
+    width: 100%;
+}
+#keypad .keypad-row {
+    display: table-row;
+    height: 75px;
+}
+#keypad .keypad-row div {
+    display: table-cell;
+    width: 25%;
+    font-size: 30px;
+    font-weight: 600;
+    vertical-align: middle;
+    text-align: center;
+    cursor: pointer;
+    border: 1px solid #f5f6f8;
+}
+#keypad .keypad-row div:hover {
+    background-color: #efefef;
+}
+#keypad .keypad-row .color-blue {
+    color: #01579B;
+}
+#keypad .keypad-row #clear {
+    color: #E53935;
+}
+#keypad .keypad-row #eql-sign {
+    background-color: #01579B;
+    color: white;
+}
+#keypad .keypad-row #eql-sign:hover {
+    background-color: #5ba6e0;
+}
